@@ -2,12 +2,25 @@
   font-family: 'Roboto';
 }
 
+.building-screen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5vw;
+}
+
+.sf-text {
+  display: inline-block;
+  margin: 2vh 0 5vh;
+  font-size: 23px;
+  color: #424242;
+}
+
 .header {
   width: 100%;
   position: relative;
   height: 10vh;
   box-sizing: border-box;
-  padding: 0 5vw;
 
   display: flex;
   align-items: center;
@@ -18,7 +31,7 @@
 
 .h-back-text {
   position: absolute;
-  left: 5vw;
+  left: 0;
   
   display: flex;
   align-items: center;
@@ -26,4 +39,16 @@
   font-size: 20px;
   color: #e8e8e8;
   cursor: pointer;
+}
+
+.sf-block {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3vw;
+}
+
+.sf-map {
+  display: flex;
+  justify-content: flex-end;
 }
