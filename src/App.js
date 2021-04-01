@@ -6,13 +6,15 @@ import {
 } from 'react-router-dom'
 
 import BuildingPage from './pages/BuildingPage'
+import FloorPage from './pages/FloorPage';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={BuildingPage} />
+        <Route exact path="/" component={ BuildingPage } />
+        <Route path="/:floorId" component={ FloorPage } />
       </Switch>
     </Router>
   );
