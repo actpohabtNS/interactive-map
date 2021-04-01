@@ -1,9 +1,16 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Redirect } from 'react-router-dom'
 import Header from '../components/Header'
+
+const floorsData = require('../data/floors.json')
 
 const FloorPage = ({ style }) => {
   const { floorId } = useParams();
+  const floor = floorsData.find(floor => floor.id === floorId);
+
+  if (!floor) {
+    return <Redirect to='/404' />
+  }
 
   return (
     <div>
