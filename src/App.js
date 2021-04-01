@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/interactive-map">
       <Switch>
         <Route exact path="/" component={ BuildingPage } />
         <Route exatc path="/404-page-not-found" component={ PageNotFound } />
