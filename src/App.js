@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={ BuildingPage } />
-        <Route exatc path="/404" component={ PageNotFound } />
+        <Route exatc path="/404-page-not-found" component={ PageNotFound } />
         <Route path="/:floorId" component={ FloorPage } />
       </Switch>
     </Router>

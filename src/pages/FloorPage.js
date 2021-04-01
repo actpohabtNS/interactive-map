@@ -9,7 +9,7 @@ const FloorPage = ({ style }) => {
   const floor = floorsData.find(floor => floor.id === floorId);
 
   if (!floor) {
-    return <Redirect to='/404' />
+    return <Redirect to='/404-page-not-found' />
   }
 
   return (
