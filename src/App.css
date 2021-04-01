@@ -2,6 +2,13 @@
   font-family: 'Roboto';
 }
 
+.page-not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vw 5vw;
+}
+
 .building-screen {
   display: flex;
   align-items: center;
