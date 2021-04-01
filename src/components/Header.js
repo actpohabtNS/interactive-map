@@ -1,20 +1,24 @@
 import React from 'react'
 import { FiChevronLeft } from 'react-icons/fi'
 
-const Header = ({ style, backText, onBackClick, children }) => {
+const Header = ({ style, backComponent, backChevron, children }) => {
   return (
     <div className="header" style={ style }>
       
       {
-        backText
-        ? <div className="h-back-text" onClick={ onBackClick }>
+        backComponent
+        &&
+        <div className="h-back-text">
+            
+          { backChevron
+            &&
             <FiChevronLeft
               size={25}
             />
+          }
 
-            { backText }
+            { backComponent }
           </div>
-        : null
       }
 
       { children }
