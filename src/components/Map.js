@@ -1,10 +1,9 @@
 import React from 'react'
-import building from '../data/building.png'
 
-const Map = ({ style, className, svg }) => {
+const Map = ({ style, className, svg, asset, width, height }) => {
   return (
     <div style={ style } className={className}>
-      <img src={building} alt="" />
+      <img src={asset} alt="" style={{ width, height }} />
     </div>
   )
 }
