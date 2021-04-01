@@ -1,9 +1,9 @@
-import BuildingScreen from './screens/BuildingScreen'
+import BuildingPage from './pages/BuildingPage'
 import './App.css';
 
 function App() {
   return (
-    <BuildingScreen />
+    <BuildingPage />
   );
 }
 

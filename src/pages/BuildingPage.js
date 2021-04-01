@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Map from '../components/Map'
 import FloorItem from '../components/FloorItem'
 
-const BuildingScreen = () => {
+const BuildingPage = () => {
   return (
     <div className="building-screen">
       <Header>
@@ -45,4 +45,4 @@ const BuildingScreen = () => {
   )
 }
 
-export default BuildingScreen;
+export default BuildingPage;
