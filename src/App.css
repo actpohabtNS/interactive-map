@@ -91,6 +91,31 @@
   font-size: 20px;
 }
 
+.fi-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6vh;
+}
+
+.fi-list > div {
+  display: inline-block;
+  font-size: 20px;
+  min-width: 11vw;
+  max-width: 30vw;
+
+  margin-right: 3vw;
+  padding: 0 0 1vw 0;
+
+  color: #a8a8a8;
+  
+  cursor: pointer;
+}
+
+.fi-list > div:hover {
+  color: black;
+}
+
 .floor-page {
   display: flex;
   align-items: center;
