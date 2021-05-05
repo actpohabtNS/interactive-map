@@ -9,63 +9,15 @@
   padding: 3vw 5vw;
 }
 
-.sf-text {
-  display: inline-block;
-  margin: 2vh 0 5vh;
-  font-size: 25px;
-  color: #424242;
-}
-
-.header {
-  width: 100%;
-  position: relative;
-  height: 10vh;
-  box-sizing: border-box;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-text {
-  font-size: 35px;
-  font-weight: 500;
-}
-
-.h-back-text {
-  position: absolute;
-  left: 0;
-  
-  display: flex;
-  align-items: center;
-
-  font-size: 20px;
-  color: #a8a8a8;
-  cursor: pointer;
-}
-
 .fi-block {
   flex: 1;
   display: flex;
   align-items: center;
-
-  color: #a8a8a8;
 }
 
 .fi-block:hover {
   cursor: pointer;
   color: black;
-}
-
-.fi-num {
-  display: inline-block;
-  min-width: 4vw;
-  font-size: 5rem;
-}
-
-.fi-text {
-  display: inline-block;
-  font-size: 20px;
 }
 
 .fi-room {
@@ -76,8 +28,6 @@
 
   margin-right: 3vw;
   padding: 0 0 1vw 0;
-
-  color: #a8a8a8;
   
   cursor: pointer;
 }

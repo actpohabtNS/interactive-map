@@ -1,0 +1,16 @@
+.sf-text {
+  display: inline-block;
+  margin: 2vh 0 5vh;
+  font-size: 25px;
+}
+
+.fi-num {
+  display: inline-block;
+  min-width: 4vw;
+  font-size: 5rem;
+}
+
+.fi-text {
+  display: inline-block;
+  font-size: 20px;
+}

@@ -10,6 +10,7 @@ import BuildingPage from './pages/BuildingPage'
 import FloorPage from './pages/FloorPage';
 import PageNotFound from './pages/PageNotFound';
 import './styles/App.css';
+import './styles/text.css';
 
 function App() {
   return (
