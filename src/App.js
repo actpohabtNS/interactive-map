@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BuildingPage from './pages/BuildingPage'
 import FloorPage from './pages/FloorPage';
 import PageNotFound from './pages/PageNotFound';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
