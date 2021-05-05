@@ -32,7 +32,7 @@ const BuildingPage = () => {
         </Col>
 
         <Col>
-          <div className="sf-floors-list">
+          <div className="d-flex flex-column-reverse align-items-start h-100">
             { floorsData.map(floor => <CustomLink key={ floor.id } to={`/${floor.id}`} className="fi-block">
                 <FloorItem floorNum={ floor.num } floorText={ floor.description } />
               </CustomLink> ) }
