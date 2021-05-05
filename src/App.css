@@ -32,7 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.header-text {
   font-size: 35px;
   font-weight: 500;
 }
@@ -99,7 +101,7 @@
   margin-bottom: 6vh;
 }
 
-.fi-list > div {
+.fi-room {
   display: inline-block;
   font-size: 20px;
   min-width: 11vw;
@@ -113,7 +115,7 @@
   cursor: pointer;
 }
 
-.fi-list > div:hover {
+.fi-room:hover {
   color: black;
 }
 

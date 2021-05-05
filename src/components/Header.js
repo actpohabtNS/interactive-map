@@ -3,7 +3,7 @@ import { FiChevronLeft } from 'react-icons/fi'
 
 const Header = ({ style, backComponent, backChevron, children }) => {
   return (
-    <div className="header" style={ style }>
+    <div className="header header-text" style={ style }>
       
       {
         backComponent
