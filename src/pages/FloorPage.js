@@ -1,7 +1,9 @@
 import React from 'react'
 import { useParams, Link, Redirect } from 'react-router-dom'
-import Header from '../components/Header'
+import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
+
 import Map from '../components/Map'
+import Room from '../components/Room'
 import floorMap from '../data/floor_1.png'
 
 const floorsData = require('../data/floors.json')
@@ -15,38 +17,52 @@ const FloorPage = ({ style }) => {
   }
 
   return (
-    <div className="floor-page">
-      <Header
-        backChevron
-        backComponent={ <Link to="/" style={{ textDecoration: 'none', color: '#a8a8a8' }}>Обрати поверх</Link> }
-      >
-        <Link to="/" style={{ textDecoration: 'none', color: '#a8a8a8' }}><pre> ФКНК / </pre></Link>
-        
-        <span>{ `Поверх ${floor.num}` }</span>
-      </Header>
+    <Container fluid className="px-5">
+      <Row>
+        <Col className="d-flex justify-content-center">
+          <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mt-4">
+            <Breadcrumb.Item>
+              <Link to="/">ФКНК</Link>
+            </Breadcrumb.Item>
 
-      <span className="sf-text">Наведіть чи натисніть на кабінет на мапі чи у списку</span>
+            <Breadcrumb.Item active className="text-dark">
+              { `Поверх ${floor.num}` }
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        </Col>
+      </Row>
+      
+      <Row>
+        <Col className="text-center">
+          <span className="sf-text text-secondary">Наведіть чи натисніть на кабінет на мапі чи у списку</span>
+        </Col>
+      </Row>
 
-      <div className="sf-block">
-        <Map className="sf-map" asset={floorMap} height={800} />
-        <div className="sf-floors-list">
-          <div className="fi-list">
-            <div>Список</div>
-            <div>найважливіших</div>
-            <div>об’єктів</div>
-            <div>поверху</div>
-            <div>Майстерня</div>
-            <div>Туалет чоловічий</div>
-            <div>Туалет жіночий</div>
-            <div>Комора</div>
-            <div>Актова зала</div>
+      <Row>
+        <Col>
+          <Map className="d-flex justify-content-end" asset={floorMap} height={800} />
+        </Col>
+
+        <Col>
+          <div className="d-flex flex-column">
+            <div className="d-flex flex-wrap w-100 mb-4">
+              <Room name="Список" / >
+              <Room name="найважливіших" / >
+              <Room name="об’єктів" / >
+              <Room name="поверху" / >
+              <Room name="Майстерня" / >
+              <Room name="Туалет" / >
+              <Room name="Туалет" / >
+              <Room name="Комора" / >
+              <Room name="Актова" / >
+            </div>
+            <div className="fi-text">
+              { floor.description }
+            </div>
           </div>
-          <div className="fi-text">
-            { floor.description }
-          </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
