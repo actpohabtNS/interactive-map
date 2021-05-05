@@ -63,8 +63,9 @@
 
 .sf-floors-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: flex-start;
+  height: 100%;
 }
 
 .fi-block {
@@ -83,7 +84,7 @@
 .fi-num {
   display: block;
   min-width: 5vw;
-  font-size: 5vw;
+  font-size: 5rem;
 }
 
 .fi-text {
