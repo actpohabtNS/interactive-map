@@ -9,13 +9,6 @@
   padding: 3vw 5vw;
 }
 
-.building-screen {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 5vw;
-}
-
 .sf-text {
   display: inline-block;
   margin: 2vh 0 5vh;
@@ -51,25 +44,6 @@
   cursor: pointer;
 }
 
-.sf-block {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3vw;
-}
-
-.sf-map {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sf-floors-list {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-start;
-  height: 100%;
-}
-
 .fi-block {
   flex: 1;
   display: flex;
@@ -84,21 +58,14 @@
 }
 
 .fi-num {
-  display: block;
-  min-width: 5vw;
+  display: inline-block;
+  min-width: 4vw;
   font-size: 5rem;
 }
 
 .fi-text {
   display: inline-block;
   font-size: 20px;
-}
-
-.fi-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 6vh;
 }
 
 .fi-room {
@@ -117,11 +84,4 @@
 
 .fi-room:hover {
   color: black;
-}
-
-.floor-page {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 5vw;
 }
