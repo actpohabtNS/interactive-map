@@ -1,3 +1,8 @@
+.header-text {
+  font-size: 35px;
+  font-weight: 500;
+}
+
 .sf-text {
   display: inline-block;
   margin: 2vh 0 5vh;
