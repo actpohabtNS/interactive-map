@@ -12,13 +12,35 @@ const floorsData = require('../data/floors.json')
 const BuildingPage = () => {
   return (
     <>
-      <Container fluid className="px-5 position-fixed d-flex justify-content-center align-items-center bg-light-gray">
+      <Container fluid className="px-5 position-fixed bg-light-gray">
+        <Row>
+          <Col />
 
-        <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0 mr-auto">
-          <Breadcrumb.Item active className="text-dark">
-            Факультет комп’ютерних наук та кібернетики
-          </Breadcrumb.Item>
-        </Breadcrumb>
+          <Col xs="auto">
+            <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
+              <Breadcrumb.Item active className="text-dark">
+                Факультет комп’ютерних наук та кібернетики
+              </Breadcrumb.Item>
+            </Breadcrumb>
+          </Col>
+
+          <Col className="d-flex align-items-center justify-content-end">
+            <OverlayTrigger
+              key="info"
+              placement="bottom"
+              overlay={
+                <Tooltip id="tooltip-info">
+                  <strong>Оберіть поверх</strong>, натиснувши на нього на мапі або у списку
+                </Tooltip>
+              }
+            >
+              <Badge pill className="p-1 text-secondary"><FaQuestion size={22} /></Badge>
+            </OverlayTrigger>
+          </Col>
+        </Row>
+        
+        
+        
 
       </Container>
 
