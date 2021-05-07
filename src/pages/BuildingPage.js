@@ -45,12 +45,6 @@ const BuildingPage = () => {
       </Container>
 
       <Container fluid className="px-5 min-vh-100 d-flex justify-content-center flex-column">
-        
-        <Row>
-          <Col className="text-center">
-            <span className="sf-text text-secondary">Оберіть поверх</span>
-          </Col>
-        </Row>
 
         <Row>
           <Col>
