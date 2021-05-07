@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams, Link, Redirect } from 'react-router-dom'
-import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
+import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button } from 'react-bootstrap'
+import { FaQuestion, FaChevronLeft } from 'react-icons/fa'
 
 import Map from '../components/Map'
 import Room from '../components/Room'
@@ -18,17 +19,45 @@ const FloorPage = ({ style }) => {
 
   return (
     <>
-      <Container fluid className="px-5 position-fixed d-flex justify-content-center align-items-center bg-light-gray">
+      <Container fluid className="px-5 position-fixed bg-light-gray">
 
-      <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
-        <Breadcrumb.Item>
-          <Link to="/" className="text-secondary text-underline">ФКНК</Link>
-        </Breadcrumb.Item>
+        <Row>
+            <Col className="d-flex align-items-center">
+              <Button variant="outline-light" className="border-0">
+                <Link to="/" className="text-secondary text-underline">
+                  <Badge pill className="p-1 text-secondary"><FaChevronLeft size={22} /></Badge>
+                </Link>
+              </Button>
+            </Col>
 
-        <Breadcrumb.Item active className="text-dark">
-          { `Поверх ${floor.num}` }
-        </Breadcrumb.Item>
-      </Breadcrumb>
+            <Col xs="auto">
+              <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
+                <Breadcrumb.Item>
+                  <Link to="/" className="text-secondary text-underline">ФКНК</Link>
+                </Breadcrumb.Item>
+
+                <Breadcrumb.Item active className="text-dark">
+                  { `Поверх ${floor.num}` }
+                </Breadcrumb.Item>
+              </Breadcrumb>
+            </Col>
+
+            <Col className="d-flex align-items-center justify-content-end">
+              <OverlayTrigger
+                key="info"
+                placement="bottom"
+                overlay={
+                  <Tooltip id="tooltip-info">
+                    <strong>Оберіть поверх</strong>, натиснувши на нього на мапі або у списку
+                  </Tooltip>
+                }
+              >
+                <Badge pill className="p-1 text-secondary"><FaQuestion size={22} /></Badge>
+              </OverlayTrigger>
+            </Col>
+          </Row>
+
+      
 
       {/* <OverlayTrigger
         key="info"
