@@ -33,5 +33,5 @@
 }
 
 .fi-room:hover {
-  color: black;
+  color: black !important;
 }
