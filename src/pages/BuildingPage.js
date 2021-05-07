@@ -13,6 +13,7 @@ const BuildingPage = () => {
   return (
     <>
       <Container fluid className="px-5 position-fixed bg-light-gray">
+        
         <Row>
           <Col />
 
@@ -38,9 +39,6 @@ const BuildingPage = () => {
             </OverlayTrigger>
           </Col>
         </Row>
-        
-        
-        
 
       </Container>
 
