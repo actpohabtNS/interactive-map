@@ -23,8 +23,8 @@ const FloorPage = ({ style }) => {
 
         <Row>
             <Col className="d-flex align-items-center">
-              <Button variant="outline-light" className="border-0">
-                <Link to="/" className="text-secondary text-underline">
+              <Button variant="outline-light" className="border-0 p-0">
+                <Link to="/" className="text-secondary text-underline h-100 w-100 d-block p-1">
                   <Badge pill className="p-1 text-secondary"><FaChevronLeft size={22} /></Badge>
                 </Link>
               </Button>
