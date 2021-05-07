@@ -48,7 +48,7 @@ const FloorPage = ({ style }) => {
                 placement="bottom"
                 overlay={
                   <Tooltip id="tooltip-info">
-                    <strong>Оберіть поверх</strong>, натиснувши на нього на мапі або у списку
+                    <strong>Оберіть кабінет</strong>, натиснувши на нього на мапі або у списку
                   </Tooltip>
                 }
               >
@@ -57,28 +57,9 @@ const FloorPage = ({ style }) => {
             </Col>
           </Row>
 
-      
-
-      {/* <OverlayTrigger
-        key="info"
-        placement="bottom"
-        overlay={
-          <Tooltip id="tooltip-info">
-            Оберіть поверх
-          </Tooltip>
-        }
-      >
-        <Badge pill className="h-100 p-1 text-secondary"><FaQuestion size={22} /></Badge>
-      </OverlayTrigger> */}
       </Container>
 
       <Container fluid className="px-5 min-vh-100 d-flex justify-content-center flex-column">
-        
-        <Row>
-          <Col className="text-center">
-            <span className="sf-text text-secondary">Наведіть чи натисніть на кабінет на мапі чи у списку</span>
-          </Col>
-        </Row>
 
         <Row>
           <Col>
