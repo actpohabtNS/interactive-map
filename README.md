@@ -7,6 +7,7 @@ The app to look through the map of your department and get information about eac
 * Select Floor to see its schema
 * Hover any room to get its short information
 * Click any room to get its detailed description
+* Search needed room on the Faculty or Floor map
 
 ### In future releases (beyond the scope of university lab)
 * Evacuation routes
