@@ -2,6 +2,18 @@
 
 The app to look through the map of your department and get information about each room.
 
+## Features
+* Explore your Faculty map
+* Select Floor to see its schema
+* Hover any room to get its short information
+* Click any room to get its detailed description
+
+### In future releases (beyond the scope of university lab)
+* Evacuation routes
+* User location detection (inside the faculty) and routes to the selected room
+* Links to personnel webpages (if any exist)
+* Links to room schedule (mytimetable.live)
+
 
 # Glossary
 
