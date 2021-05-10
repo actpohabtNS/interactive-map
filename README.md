@@ -40,4 +40,6 @@ The app to look through the map of your department and get information about eac
 
 **Search bar** - an input which performs search room.
 
+**Room info block** - a block with detailed Room information.
+
 (Faculty/Floor) **Map** - svg map, list of objects (Floors, Rooms etc) on it and a search bar.
