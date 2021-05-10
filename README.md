@@ -29,8 +29,10 @@ The app to look through the map of your department and get information about eac
 
 **Room** - is a part of a building with explicit borders (e.g. walls) that can be assigned personnel and/or department.
 
+**Search room** - filtering Faculty's or Floor's rooms by name at correspoding Faculty or Floor.
+
 **SVG map** - is a schema of a Faculty or a Floor, on which objects (Floors, Rooms etc) can be selected.
 
-(Faculty/Floor) **Map** - svg map and the list of objects (Floors, Rooms etc) on it.
+(Faculty/Floor) **Map** - svg map, list of objects (Floors, Rooms etc) on it and a search bar.
 
 **Explore** (Faculty/Floor map) - look on a Map, select appropriate Floor and search Rooms list.
