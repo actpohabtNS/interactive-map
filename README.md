@@ -31,7 +31,7 @@ The app to look through the map of your department and get information about eac
 
 **Search room** - filter Faculty's or Floor's rooms by name at correspoding Faculty or Floor.
 
-**Explore** (Faculty/Floor map) - look on a Map, select appropriate Floor and search Rooms list.
+**Explore** (Faculty/Floor map) - look on a Map, select appropriate Floor/Room and search Rooms list.
 
 ## Components
 **SVG map** - is a schema of a Faculty or a Floor, on which objects (Floors, Rooms etc) can be selected.
