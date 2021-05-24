@@ -14,6 +14,9 @@ The app to look through the map of your department and get information about eac
 * User location detection (inside the faculty) and routes to the selected room
 * Links to personnel webpages (if any exist)
 * Links to room schedule (mytimetable.live)
+* Filter empty (in schedule term) rooms
+* Faculty room search
+* Constant room links (which can be shared and will point to the same room)
 
 
 # Glossary
