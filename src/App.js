@@ -4,7 +4,6 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import BuildingPage from './pages/BuildingPage'
 import FloorPage from './pages/FloorPage';
