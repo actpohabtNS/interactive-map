@@ -19,13 +19,13 @@ const FloorPage = ({ style }) => {
 
   return (
     <>
-      <Container fluid className="px-5 position-fixed bg-light-gray" style={{ zIndex: 10 }}>
+      <Container fluid className="px-5 position-fixed bg-light-gray header-breadcrumb">
 
         <Row>
             <Col className="d-flex align-items-center">
               <Button variant="outline-light" className="border-0 p-0">
                 <Link to="/" className="text-secondary text-decoration-none h-100 w-100 d-block p-2 d-flex align-items-center">
-                  <FaChevronLeft size={22} /><span className="fi-text text-middle">Обрати поверх</span>
+                  <FaChevronLeft size={22} /><span className="ml-2 fi-text text-middle">Обрати поверх</span>
                 </Link>
               </Button>
             </Col>
@@ -59,13 +59,9 @@ const FloorPage = ({ style }) => {
 
       </Container>
 
-      <Container fluid className="px-5 min-vh-100 d-flex justify-content-center flex-column">
+      <Container fluid className="px-5 pt-7vh">
 
         <Row>
-          <Col>
-            <Map className="d-flex justify-content-end" asset={floorMap} height={800} />
-          </Col>
-
           <Col>
             <div className="d-flex flex-column">
               <div className="d-flex flex-wrap w-100 mb-4">
@@ -83,6 +79,10 @@ const FloorPage = ({ style }) => {
                 { floor.description }
               </div>
             </div>
+          </Col>
+
+          <Col>
+            <Map className="d-flex justify-content-center pt-5" asset={floorMap} height={800} />
           </Col>
         </Row>
       </Container>

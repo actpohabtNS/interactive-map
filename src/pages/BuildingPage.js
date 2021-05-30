@@ -14,7 +14,7 @@ const BuildingPage = () => {
     <>
       <Container fluid className="px-5 position-fixed bg-light-gray header-breadcrumb">
         
-        <Row className="w-100">
+        <Row>
           <Col />
 
           <Col xs="auto">
