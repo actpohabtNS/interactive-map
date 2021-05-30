@@ -11,7 +11,7 @@
 
 .header-breadcrumb {
   height: 7vh;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   width: 100%;
   align-items: center;
@@ -55,4 +55,9 @@
 
 .fi-room:hover {
   color: black !important;
+}
+
+.rooms-list {
+  max-height: 93vh;
+  margin-left: -1.5vw;
 }
