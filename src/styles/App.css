@@ -58,6 +58,7 @@
 }
 
 .rooms-list {
-  max-height: 93vh;
+  height: 93vh;
+  overflow-y:auto;
   margin-left: -1.5vw;
 }
