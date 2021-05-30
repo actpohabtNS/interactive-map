@@ -24,3 +24,16 @@
 .text-underline {
   text-decoration: underline;
 }
+
+.f-room-desc {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.f-room-desc::after {
+  display: none !important;
+}
+
+.fs-0 {
+  font-size: 0 !important;
+}
