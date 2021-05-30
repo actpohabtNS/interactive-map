@@ -14,6 +14,9 @@ The app to look through the map of your department and get information about eac
 * User location detection (inside the faculty) and routes to the selected room
 * Links to personnel webpages (if any exist)
 * Links to room schedule (mytimetable.live)
+* Filter empty (in schedule term) rooms
+* Faculty room search
+* Constant room links (which can be shared and will point to the same room)
 
 
 # Glossary
@@ -22,6 +25,8 @@ The app to look through the map of your department and get information about eac
 **Interactive map** - the name of the application with full functionality.
 
 **Interactive Faculty map** - the name of a certain release of the app with functionality limited to only the map of Faculty of Computer Science and Cybernetics.
+
+**Department** - is a division of a university or school faculty devoted to a particular academic discipline. [(Wikipedia)](https://en.wikipedia.org/wiki/Academic_department)
 
 **Faculty** - is a building (or its part) where a group of related departments is located (e.g. Faculty of Computer Science and Cybernetics).
 
