@@ -28,6 +28,15 @@
 .f-room-desc {
   font-size: 18px !important;
   font-weight: 500 !important;
+  padding-left: 1.25rem !important;
+  border-radius: 5px;
+}
+
+.room-type {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 15px;
+  font-size: 16px;
 }
 
 .f-room-desc::after {
