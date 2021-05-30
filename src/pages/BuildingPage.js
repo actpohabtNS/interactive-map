@@ -12,9 +12,9 @@ const floorsData = require('../data/floors.json')
 const BuildingPage = () => {
   return (
     <>
-      <Container fluid className="px-5 position-fixed bg-light-gray" style={{ zIndex: 10 }}>
+      <Container fluid className="px-5 position-fixed bg-light-gray header-breadcrumb">
         
-        <Row>
+        <Row className="w-100">
           <Col />
 
           <Col xs="auto">
@@ -42,9 +42,9 @@ const BuildingPage = () => {
 
       </Container>
 
-      <Container fluid className="px-5 pt-5">
+      <Container fluid className="px-5 pt-7vh">
 
-        <Row className="mb-5">
+        <Row className="my-3">
           <Col>
             <Map className="d-flex justify-content-center" asset={building} />
           </Col>
