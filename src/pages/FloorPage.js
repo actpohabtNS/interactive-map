@@ -19,7 +19,7 @@ const FloorPage = ({ style }) => {
 
   return (
     <>
-      <Container fluid className="px-5 position-fixed bg-light-gray">
+      <Container fluid className="px-5 position-fixed bg-light-gray" style={{ zIndex: 10 }}>
 
         <Row>
             <Col className="d-flex align-items-center">

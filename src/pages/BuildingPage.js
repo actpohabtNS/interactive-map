@@ -46,7 +46,7 @@ const BuildingPage = () => {
 
         <Row className="mb-5">
           <Col>
-            <Map className="d-flex justify-content-center mt-5" asset={building} />
+            <Map className="d-flex justify-content-center" asset={building} />
           </Col>
         </Row>
 
