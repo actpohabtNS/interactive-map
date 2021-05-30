@@ -42,17 +42,17 @@ const BuildingPage = () => {
 
       </Container>
 
-      <Container fluid className="px-5 pt-5 min-vh-100 d-flex justify-content-center flex-column">
+      <Container fluid className="px-5 pt-5">
 
         <Row className="mb-5">
           <Col>
-            <Map className="d-flex justify-content-center px-5 mt-5" asset={building} />
+            <Map className="d-flex justify-content-center mt-5" asset={building} />
           </Col>
         </Row>
 
         <Row>
           <Col>
-            <div className="" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+            <div className="floors-list">
               { floorsData.map(floor => <CustomLink key={ floor.id } to={`/${floor.id}`} className="text-secondary">
                   <FloorItem floorNum={ floor.num } floorText={ floor.description } />
                 </CustomLink> ) }
