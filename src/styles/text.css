@@ -11,8 +11,8 @@
 
 .fi-num {
   display: inline-block;
-  text-align: right;
-  margin-right: .75vw;
+  text-align: center;
+  margin: .75vw;
   font-size: 3rem;
 }
 
