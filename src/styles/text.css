@@ -11,13 +11,14 @@
 
 .fi-num {
   display: inline-block;
-  min-width: 4vw;
-  font-size: 5rem;
+  text-align: right;
+  margin-right: .75vw;
+  font-size: 3rem;
 }
 
 .fi-text {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .text-underline {

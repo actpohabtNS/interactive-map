@@ -10,14 +10,17 @@
 }
 
 .fi-block {
-  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
   display: flex;
   align-items: center;
 }
 
 .fi-block:hover {
   cursor: pointer;
-  color: black;
+  color: black !important;
+  background-color: #e6e6e6;
+  border-radius: 10px;
 }
 
 .fi-room {
@@ -27,7 +30,6 @@
   max-width: 30vw;
 
   margin-right: 3vw;
-  padding: 0 0 1vw 0;
   
   cursor: pointer;
 }

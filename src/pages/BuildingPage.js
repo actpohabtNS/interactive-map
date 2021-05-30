@@ -12,7 +12,7 @@ const floorsData = require('../data/floors.json')
 const BuildingPage = () => {
   return (
     <>
-      <Container fluid className="px-5 position-fixed bg-light-gray">
+      <Container fluid className="px-5 position-fixed bg-light-gray" style={{ zIndex: 10 }}>
         
         <Row>
           <Col />
@@ -42,16 +42,18 @@ const BuildingPage = () => {
 
       </Container>
 
-      <Container fluid className="px-5 min-vh-100 d-flex justify-content-center flex-column">
+      <Container fluid className="px-5 pt-5 min-vh-100 d-flex justify-content-center flex-column">
+
+        <Row className="mb-5">
+          <Col>
+            <Map className="d-flex justify-content-center px-5 mt-5" asset={building} />
+          </Col>
+        </Row>
 
         <Row>
           <Col>
-            <Map className="d-flex justify-content-end mr-3" asset={building} />
-          </Col>
-
-          <Col>
-            <div className="d-flex flex-column-reverse align-items-start h-100">
-              { floorsData.map(floor => <CustomLink key={ floor.id } to={`/${floor.id}`} className="fi-block text-secondary">
+            <div className="" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+              { floorsData.map(floor => <CustomLink key={ floor.id } to={`/${floor.id}`} className="text-secondary">
                   <FloorItem floorNum={ floor.num } floorText={ floor.description } />
                 </CustomLink> ) }
             </div>
