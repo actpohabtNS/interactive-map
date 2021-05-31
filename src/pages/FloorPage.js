@@ -1,10 +1,11 @@
 import React from 'react'
 import { useParams, Link, Redirect } from 'react-router-dom'
-import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button } from 'react-bootstrap'
-import { FaQuestion, FaChevronLeft } from 'react-icons/fa'
+import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button, Form } from 'react-bootstrap'
+import { FaQuestion, FaChevronLeft, FaUserAlt } from 'react-icons/fa'
 
 import Map from '../components/Map'
 import Room from '../components/Room'
+import roomsData from '../data/rooms.json'
 import floorMap from '../data/floor_1.png'
 
 const floorsData = require('../data/floors.json')
@@ -62,26 +63,17 @@ const FloorPage = ({ style }) => {
       <Container fluid className="px-5 pt-7vh">
 
         <Row>
-          <Col>
-            <div className="d-flex flex-column">
-              <div className="d-flex flex-wrap w-100 mb-4">
-                <Room name="Список" / >
-                <Room name="найважливіших" / >
-                <Room name="об’єктів" / >
-                <Room name="поверху" / >
-                <Room name="Майстерня" / >
-                <Room name="Туалет" / >
-                <Room name="Туалет" / >
-                <Room name="Комора" / >
-                <Room name="Актова" / >
-              </div>
-              <div className="fi-text">
-                { floor.description }
-              </div>
+          <Col className="rooms-list">
+            <Form className="py-4">
+              <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
+            </Form>
+
+            <div className="accordion" id="accordionPanelsStayOpenExample">
+              {roomsData.map(room => <Room room={room} /> )}              
             </div>
           </Col>
 
-          <Col>
+          <Col xl={9} lg={8}>
             <Map className="d-flex justify-content-center pt-5" asset={floorMap} height={800} />
           </Col>
         </Row>
