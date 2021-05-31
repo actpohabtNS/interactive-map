@@ -6,12 +6,12 @@ const RoomList = ({ rooms, className }) => {
   return (
     <div className={`rooms-list ${className ? className : ""}`}>
       <Form className="py-4">
-              <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
-            </Form>
+        <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
+      </Form>
 
-            <div className="accordion" id="accordionPanelsStayOpenExample">
-              {rooms.map(room => <Room room={room} key={room.number} /> )}              
-            </div>
+      <div className="accordion" id="accordionPanelsStayOpenExample">
+        {rooms.map(room => <Room room={room} key={room.number} /> )}              
+      </div>
     </div>
   )
 }
