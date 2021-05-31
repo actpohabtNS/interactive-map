@@ -62,3 +62,22 @@
   overflow-y:auto;
   margin-left: -1.5vw;
 }
+
+.room-block {
+  box-sizing: border-box;
+  border: 2px solid transparent !important;
+  background-color: #F8F9FA !important;
+}
+
+.room-block:hover {
+  border: 2px solid #212529 !important;
+  background-color: #e9ecef !important;
+}
+
+.no-expand {
+  cursor: default !important;
+}
+
+.no-expand::after {
+  display: none !important;
+}
