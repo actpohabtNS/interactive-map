@@ -24,17 +24,15 @@ const FloorPage = ({ style }) => {
 
         <Row>
             <Col className="d-flex align-items-center">
-              <Button variant="outline-light" className="border-0 p-0">
-                <Link to="/" className="text-secondary text-decoration-none h-100 w-100 d-block p-2 d-flex align-items-center">
-                  <FaChevronLeft size={22} /><span className="ml-2 fi-text text-middle">Обрати поверх</span>
-                </Link>
-              </Button>
+              <Link to="/" className="btn-outline-light border-0 p-0 text-secondary text-decoration-none h-100 w-100 d-block p-2 d-flex align-items-center">
+                <FaChevronLeft size={22} /><span className="ml-2 fi-text text-middle">Обрати поверх</span>
+              </Link> 
             </Col>
 
             <Col xs="auto">
               <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
-                <Breadcrumb.Item>
-                  <Link to="/" className="text-secondary text-underline">ФКНК</Link>
+                <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/', className: "text-secondary text-underline" }}>
+                  ФКНК
                 </Breadcrumb.Item>
 
                 <Breadcrumb.Item active className="text-dark">
