@@ -19,11 +19,13 @@ const Header = ({ goBack, goBackLink, tooltip, breadcrumbs, activeBreadcrumb }) 
       <Col xs="auto">
         <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
           {
+            breadcrumbs ?
             breadcrumbs.map((breadcrumb, idx) => (
               <Breadcrumb.Item key={idx} linkAs={Link} linkProps={{ to: breadcrumb.to, className: "text-secondary text-underline" }}>
                 { breadcrumb.title }
               </Breadcrumb.Item>
             ))
+            : null
           }
 
           <Breadcrumb.Item active className="text-dark">

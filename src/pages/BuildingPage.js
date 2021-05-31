@@ -4,8 +4,8 @@ import Map from '../components/Map'
 import FloorItem from '../components/FloorItem'
 import CustomLink from '../components/CustomLink'
 import building from '../data/building.png'
-import { Container, Row, Col, Breadcrumb, Badge, OverlayTrigger, Tooltip } from 'react-bootstrap'
-import { FaQuestion } from 'react-icons/fa'
+import { Container, Row, Col } from 'react-bootstrap'
+import Header from '../components/Header'
 
 const floorsData = require('../data/floors.json')
 
@@ -14,31 +14,10 @@ const BuildingPage = () => {
     <>
       <Container fluid className="px-5 position-fixed bg-light-gray header-breadcrumb">
         
-        <Row>
-          <Col />
-
-          <Col xs="auto">
-            <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
-              <Breadcrumb.Item active className="text-dark">
-                Факультет комп’ютерних наук та кібернетики
-              </Breadcrumb.Item>
-            </Breadcrumb>
-          </Col>
-
-          <Col className="d-flex align-items-center justify-content-end">
-            <OverlayTrigger
-              key="info"
-              placement="bottom"
-              overlay={
-                <Tooltip id="tooltip-info">
-                  <strong>Оберіть поверх</strong>, натиснувши на нього на мапі або у списку
-                </Tooltip>
-              }
-            >
-              <Badge pill className="p-1 text-secondary"><FaQuestion size={22} /></Badge>
-            </OverlayTrigger>
-          </Col>
-        </Row>
+        <Header
+          tooltip={<span><strong>Оберіть поверх</strong>, натиснувши на нього на мапі або у списку</span>}
+          activeBreadcrumb="Факультет комп’ютерних наук та кібернетики"
+        />
 
       </Container>
 
