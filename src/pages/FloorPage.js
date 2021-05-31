@@ -34,7 +34,9 @@ const FloorPage = ({ style }) => {
       <Container fluid className="px-5 pt-7vh">
 
         <Row>
-          <RoomList rooms={roomsData} className="col" />
+          <Col>
+            <RoomList rooms={roomsData} className="col" />
+          </Col>
 
           <Col xl={9} lg={8}>
             <Map className="d-flex justify-content-center pt-5" asset={floorMap} height={800} />
