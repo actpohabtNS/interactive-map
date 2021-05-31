@@ -35,7 +35,7 @@ const FloorPage = ({ style }) => {
 
         <Row>
           <Col>
-            <RoomList rooms={roomsData} className="col" />
+            <RoomList rooms={roomsData} />
           </Col>
 
           <Col xl={9} lg={8}>
