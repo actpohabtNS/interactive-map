@@ -1,12 +1,12 @@
 import React from 'react'
 import { useParams, Link, Redirect } from 'react-router-dom'
-import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button, Form } from 'react-bootstrap'
-import { FaQuestion, FaChevronLeft, FaUserAlt } from 'react-icons/fa'
+import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button } from 'react-bootstrap'
+import { FaQuestion, FaChevronLeft } from 'react-icons/fa'
 
 import Map from '../components/Map'
-import Room from '../components/Room'
 import roomsData from '../data/rooms.json'
 import floorMap from '../data/floor_1.png'
+import RoomList from '../components/RoomList'
 
 const floorsData = require('../data/floors.json')
 
@@ -63,15 +63,7 @@ const FloorPage = ({ style }) => {
       <Container fluid className="px-5 pt-7vh">
 
         <Row>
-          <Col className="rooms-list">
-            <Form className="py-4">
-              <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
-            </Form>
-
-            <div className="accordion" id="accordionPanelsStayOpenExample">
-              {roomsData.map(room => <Room room={room} /> )}              
-            </div>
-          </Col>
+          <RoomList rooms={roomsData} className="col" />
 
           <Col xl={9} lg={8}>
             <Map className="d-flex justify-content-center pt-5" asset={floorMap} height={800} />
