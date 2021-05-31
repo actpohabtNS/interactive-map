@@ -60,7 +60,8 @@
 .rooms-list {
   height: 93vh;
   overflow-y:auto;
-  margin-left: -1.5vw;
+  margin-left: -2rem;
+  padding-right: 1rem;
 }
 
 .room-block {
