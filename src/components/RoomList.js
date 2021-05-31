@@ -4,7 +4,7 @@ import Room from './Room'
 
 const RoomList = ({ rooms, className }) => {
   return (
-    <div className={`rooms-list ${className}`}>
+    <div className={`rooms-list ${className ? className : ""}`}>
       <Form className="py-4">
               <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
             </Form>
