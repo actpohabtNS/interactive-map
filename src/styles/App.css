@@ -70,7 +70,7 @@
   background-color: #F8F9FA !important;
 }
 
-.room-block:hover {
+.room-block:hover, .room-block-active {
   border: 2px solid #212529 !important;
   background-color: #e9ecef !important;
 }
