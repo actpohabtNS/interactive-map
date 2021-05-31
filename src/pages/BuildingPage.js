@@ -32,9 +32,13 @@ const BuildingPage = () => {
         <Row>
           <Col>
             <div className="floors-list">
-              { floorsData.map(floor => <CustomLink key={ floor.id } to={`/${floor.id}`} className="text-secondary">
+              {
+                floorsData.map(floor => (
+                <CustomLink key={ floor.id } to={`/${floor.id}`} className="text-secondary">
                   <FloorItem floorNum={ floor.num } floorText={ floor.description } />
-                </CustomLink> ) }
+                </CustomLink>
+                ))
+              }
             </div>
           </Col>
         </Row>
