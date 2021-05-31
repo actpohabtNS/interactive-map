@@ -1,12 +1,12 @@
 import React from 'react'
-import { useParams, Link, Redirect } from 'react-router-dom'
-import { Container, Row, Col, Breadcrumb, OverlayTrigger, Tooltip, Badge, Button } from 'react-bootstrap'
-import { FaQuestion, FaChevronLeft } from 'react-icons/fa'
+import { useParams, Redirect } from 'react-router-dom'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import Map from '../components/Map'
 import roomsData from '../data/rooms.json'
 import floorMap from '../data/floor_1.png'
 import RoomList from '../components/RoomList'
+import Header from '../components/Header'
 
 const floorsData = require('../data/floors.json')
 
@@ -21,40 +21,13 @@ const FloorPage = ({ style }) => {
   return (
     <>
       <Container fluid className="px-5 position-fixed bg-light-gray header-breadcrumb">
-
-        <Row>
-            <Col className="d-flex align-items-center">
-              <Link to="/" className="btn-outline-light border-0 p-0 text-secondary text-decoration-none h-100 w-100 d-block p-2 d-flex align-items-center">
-                <FaChevronLeft size={22} /><span className="ml-2 fi-text text-middle">Обрати поверх</span>
-              </Link> 
-            </Col>
-
-            <Col xs="auto">
-              <Breadcrumb bsPrefix="breadcrumb header-text bg-transparent mb-0">
-                <Breadcrumb.Item linkAs={Link} linkProps={{ to: '/', className: "text-secondary text-underline" }}>
-                  ФКНК
-                </Breadcrumb.Item>
-
-                <Breadcrumb.Item active className="text-dark">
-                  { `Поверх ${floor.num}` }
-                </Breadcrumb.Item>
-              </Breadcrumb>
-            </Col>
-
-            <Col className="d-flex align-items-center justify-content-end">
-              <OverlayTrigger
-                key="info"
-                placement="bottom"
-                overlay={
-                  <Tooltip id="tooltip-info">
-                    <strong>Оберіть кабінет</strong>, натиснувши на нього на мапі або у списку
-                  </Tooltip>
-                }
-              >
-                <Badge pill className="p-1 text-secondary"><FaQuestion size={22} /></Badge>
-              </OverlayTrigger>
-            </Col>
-          </Row>
+        <Header
+          goBack="Обрати поверх"
+          goBackLink="/"
+          tooltip={<span><strong>Оберіть кабінет</strong>, натиснувши на нього на мапі або у списку</span>}
+          activeBreadcrumb={ `Поверх ${floor.num}` }
+          breadcrumbs={[ { to: "/", title: "ФКНК" } ]}
+        />
 
       </Container>
 
