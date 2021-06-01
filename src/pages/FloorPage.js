@@ -16,6 +16,7 @@ class FloorPage extends React.Component {
     super(props);
 
     this.state = {
+      preselectedRoom: null,
       roomQuery: "",
       DataAdapter: new DataAdapter(fcsc),
       hoveredMapLocationName: null,
@@ -39,6 +40,12 @@ class FloorPage extends React.Component {
 		this.handleLocationMouseMove = this.handleLocationMouseMove.bind(this);
 		this.handleItemMouseOver = this.handleItemMouseOver.bind(this); 
 		this.handleItemMouseOut = this.handleItemMouseOut.bind(this); 
+  }
+
+  componentDidMount() {
+    const query = new URLSearchParams(this.props.location.search);
+    const preselectedRoom = query.get("room");
+    this.setState({ preselectedRoom }); // TODO
   }
 
   handleItemFocus(event) {
