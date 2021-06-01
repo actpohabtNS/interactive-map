@@ -5,7 +5,7 @@ import Room from './Room'
 const roomSatisfiesQuery = (room, query) => {
   query = query.toLowerCase();
   const { nameShort, name, staff } = room;
-  if (nameShort.toLowerCase().includes(query) || name.toLowerCase().includes(query)) {
+  if (nameShort.toString().toLowerCase().includes(query) || name.toString().toLowerCase().includes(query)) {
     return true;
   }
 

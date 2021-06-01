@@ -231,8 +231,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
@@ -248,8 +248,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
@@ -265,8 +265,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
@@ -282,8 +282,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
@@ -299,8 +299,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
@@ -316,8 +316,8 @@ export default
       "rooms": [
         {
           "id": "",
-          "titleShort": "",   
-          "title": "",
+          "nameShort": "",   
+          "name": "",
           "category": "",
           "path": ""
         }
