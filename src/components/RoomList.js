@@ -2,22 +2,48 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 import Room from './Room'
 
-const RoomList = ({ rooms, className, onItemMouseOver, onItemMouseOut, itemClassName }) => {
+const roomSatisfiesQuery = (room, query) => {
+  query = query.toLowerCase();
+  const { nameShort, name, staff } = room;
+  if (nameShort.toLowerCase().includes(query) || name.toLowerCase().includes(query)) {
+    return true;
+  }
+
+  if (staff) {
+    for (const staffObj of staff) {
+      if (staffObj.name.toLowerCase.includes(query)) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+const RoomList = ({ rooms, className, searchQuery, onQueryChange, onItemMouseOver, onItemMouseOut, itemClassName }) => {
   return (
     <div className={`rooms-list ${className ? className : ""}`}>
       <Form className="py-4">
-        <Form.Control as="input" placeholder="🔍 Пошук кімнат"></Form.Control>
+        <Form.Control
+          as="input"
+          placeholder="🔍 Пошук кімнат"
+          value={searchQuery}
+          onChange={onQueryChange}
+        />
       </Form>
 
       <div className="accordion" id="accordionPanelsStayOpenExample">
-        {rooms.map(room => <Room
+        {
+          rooms
+          .filter(room => roomSatisfiesQuery(room, searchQuery))
+          .map(room => <Room
             room={room}
             key={room.id}
             className={itemClassName ? itemClassName(room) : ""}
             onMouseOver={onItemMouseOver}
             onMouseOut={onItemMouseOut}
-          />
-        )}              
+          />)
+        }
       </div>
     </div>
   )

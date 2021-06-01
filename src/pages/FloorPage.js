@@ -16,6 +16,7 @@ class FloorPage extends React.Component {
     super(props);
 
     this.state = {
+      roomQuery: "",
       DataAdapter: new DataAdapter(fcsc),
       hoveredMapLocationName: null,
 			hoveredMapLocationId: null,
@@ -100,7 +101,9 @@ class FloorPage extends React.Component {
           <Row>
             <Col>
               <RoomList
-                rooms={rooms} 
+                rooms={rooms}
+                searchQuery={this.state.roomQuery}
+                onQueryChange={e => this.setState({ roomQuery: e.target.value })}
                 onItemMouseOver={this.handleItemMouseOver}
                 onItemMouseOut={this.handleItemMouseOut}
                 itemClassName={room => this.state.hoveredMapLocationId === room.id ? "hovered" : ""}
