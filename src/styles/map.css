@@ -1,0 +1,34 @@
+.map-tooltip {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid darkgray;
+  background-color: white;
+}
+
+.floor {
+  fill: #e6e6e6;
+}
+
+.floor:hover, .floor.hovered {
+  cursor: pointer;
+  fill: #fafafa;
+}
+
+.floor:focus {
+  outline: none;
+}
+
+.outline {
+  fill: #808181;
+  pointer-events: none;
+}
+
+.background {
+  fill: #e6e6e6;
+}
+
+.hovered-location {
+  height: 50px;
+  font-size: 25px;
+}
