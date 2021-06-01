@@ -20,7 +20,7 @@ const roomSatisfiesQuery = (room, query) => {
   return false;
 }
 
-const RoomList = ({ rooms, className, searchQuery, onQueryChange, onItemMouseOver, onItemMouseOut, itemClassName }) => {
+const RoomList = ({ rooms, className, searchQuery, onQueryChange, onItemFocus, onItemBlur, onItemMouseOver, onItemMouseOut, itemClassName }) => {
   return (
     <div className={`rooms-list ${className ? className : ""}`}>
       <Form className="py-4">
@@ -40,6 +40,8 @@ const RoomList = ({ rooms, className, searchQuery, onQueryChange, onItemMouseOve
             room={room}
             key={room.id}
             className={itemClassName ? itemClassName(room) : ""}
+            onFocus={onItemFocus}
+            onBlur={onItemBlur}
             onMouseOver={onItemMouseOver}
             onMouseOut={onItemMouseOut}
           />)

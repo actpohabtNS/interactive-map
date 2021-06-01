@@ -1,20 +1,23 @@
 import React from 'react'
 import { FaUserAlt } from 'react-icons/fa'
 
-const Room = ({ room, className, onMouseOver, onMouseOut }) => {
+const Room = ({ room, className, onFocus, onBlur, onMouseOver, onMouseOut, tabIndex }) => {
   let hasStaff = !!room.staff && room.staff.length !== 0;
   return (
     <div
       className={`accordion-item room-block mb-3 border-0 rounded bg-light ${className ? className : ""}`}
       id={room.id}
+      tabIndex={tabIndex ? tabIndex : 0}
+      onFocus={onFocus}
+      onBlur={onBlur}
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
     >
       <h2 className="accordion-header fs-0" id={`panelsStayOpen-heading${room.nameShort}`}>
-        <button className={`accordion-button collapsed pb-0 ${!hasStaff ? "no-expand" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${room.nameShort}`} aria-expanded="true" aria-controls={`panelsStayOpen-collapse${room.nameShort}`}>
+        <button className={`accordion-button collapsed pb-0 ${!hasStaff ? "no-expand" : ""}`} tabIndex={-1} type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${room.nameShort}`} aria-expanded="true" aria-controls={`panelsStayOpen-collapse${room.nameShort}`}>
           {room.nameShort}
         </button>
-        <button className={`accordion-button f-room-desc collapsed pt-0 ${!hasStaff ? "no-expand" : ""}`} type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${room.nameShort}`} aria-expanded="true" aria-controls={`panelsStayOpen-collapse${room.nameShort}`}>
+        <button className={`accordion-button f-room-desc collapsed pt-0 ${!hasStaff ? "no-expand" : ""}`} tabIndex={-1} type="button" data-bs-toggle="collapse" data-bs-target={`#panelsStayOpen-collapse${room.nameShort}`} aria-expanded="true" aria-controls={`panelsStayOpen-collapse${room.nameShort}`}>
           <div className={`room-type room-${room.category}`}>{room.name}</div>
         </button>
       </h2>

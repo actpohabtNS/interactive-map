@@ -21,18 +21,33 @@ class FloorPage extends React.Component {
       hoveredMapLocationName: null,
 			hoveredMapLocationId: null,
       hoveredListLocationId: null,
+      selectedMapLocationId: null,
+      selectedListLocationId: null,
 			tooltipStyle: {
 				display: 'none'
 			}
     }
 
     this.getLocationClassName = this.getLocationClassName.bind(this);
-		this.handleLocationClick = this.handleLocationClick.bind(this);
+    this.getItemClassName = this.getItemClassName.bind(this);
+		this.handleLocationFocus = this.handleLocationFocus.bind(this);
+		this.handleLocationBlur = this.handleLocationBlur.bind(this);
+		this.handleItemFocus = this.handleItemFocus.bind(this);
+		this.handleItemBlur = this.handleItemBlur.bind(this);
 		this.handleLocationMouseOver = this.handleLocationMouseOver.bind(this);
 		this.handleLocationMouseOut = this.handleLocationMouseOut.bind(this);
 		this.handleLocationMouseMove = this.handleLocationMouseMove.bind(this);
 		this.handleItemMouseOver = this.handleItemMouseOver.bind(this); 
 		this.handleItemMouseOut = this.handleItemMouseOut.bind(this); 
+  }
+
+  handleItemFocus(event) {
+    const selectedItemLocationId = getLocationId(event);
+    this.setState({ selectedItemLocationId });
+  }
+
+  handleItemBlur() {
+    this.setState({ selectedItemLocationId: null });
   }
 
   handleItemMouseOver(event) {
@@ -44,9 +59,13 @@ class FloorPage extends React.Component {
     this.setState({ hoveredListLocationId: null });
   }
   
-  handleLocationClick(event) {
-    const hoveredMapLocationId = getLocationId(event);
-    this.props.history.push(`/${hoveredMapLocationId}`);
+  handleLocationFocus(event) {
+    const selectedMapLocationId = getLocationId(event);
+    this.setState({ selectedMapLocationId });
+  }
+
+  handleLocationBlur() {
+    this.setState({ selectedMapLocationId: null });
   }
 
   handleLocationMouseOver(event) {
@@ -72,6 +91,18 @@ class FloorPage extends React.Component {
 		return `${location.id} floor ${this.state.hoveredListLocationId === location.id ? "hovered" : ""}`;
 	}
 
+  getItemClassName(item) {
+    let className = "";
+    if (this.state.hoveredMapLocationId === item.id) {
+    className += " hovered";
+    }
+    if (this.state.selectedMapLocationId === item.id) {
+      className += " selected";
+    }
+    
+    return className;
+  }
+  
   render() {
     const { floorId } = this.props.match.params;
     const floor = floorsData.find(floor => floor.id === floorId);
@@ -100,13 +131,16 @@ class FloorPage extends React.Component {
 
           <Row>
             <Col>
+              {/* TODO: make onFocus on Room block work. Now focuse appears on its children */}
               <RoomList
                 rooms={rooms}
                 searchQuery={this.state.roomQuery}
                 onQueryChange={e => this.setState({ roomQuery: e.target.value })}
+                onItemFocus={this.onItemFocus}
+                onItemBlur={this.onItemBlur}
                 onItemMouseOver={this.handleItemMouseOver}
                 onItemMouseOut={this.handleItemMouseOut}
-                itemClassName={room => this.state.hoveredMapLocationId === room.id ? "hovered" : ""}
+                itemClassName={this.getItemClassName}
               />
             </Col>
 
@@ -116,7 +150,8 @@ class FloorPage extends React.Component {
                   className="w-75"
                   map={map}
                   locationClassName={this.getLocationClassName}
-                  onLocationClick={this.handleLocationClick}
+                  onLocationFocus={this.handleLocationFocus}
+                  onLocationBlur={this.handleLocationBlur}
                   onLocationMouseOver={this.handleLocationMouseOver}
                   onLocationMouseOut={this.handleLocationMouseOut}
                   onLocationMouseMove={this.handleLocationMouseMove}

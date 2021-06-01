@@ -11,9 +11,9 @@
   fill: #e6ecec;
 }
 
-.floor:hover, .floor.hovered {
+.floor:hover, .floor.hovered, .floor:focus {
   cursor: pointer;
-  fill: #fafafa;
+  fill: #ffd987;
 }
 
 .floor:focus {

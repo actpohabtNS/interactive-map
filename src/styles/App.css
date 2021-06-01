@@ -38,7 +38,7 @@
 .fi-block:hover, .fi-block.hovered {
   cursor: pointer;
   color: black !important;
-  background-color: #e6e6e6;
+  background-color: #e6ecec;
   border-radius: 10px;
 }
 
@@ -70,9 +70,9 @@
   background-color: #F8F9FA !important;
 }
 
-.room-block:hover, .room-block.hovered {
+.room-block:hover, .room-block:focus-within, .room-block.hovered, .room-block.selected {
   border: 2px solid #212529 !important;
-  background-color: #e9ecef !important;
+  background-color: #e6ecec !important;
 }
 
 .no-expand {
