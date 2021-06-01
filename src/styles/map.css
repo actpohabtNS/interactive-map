@@ -4,10 +4,11 @@
   padding: 10px;
   border: 1px solid darkgray;
   background-color: white;
+  text-align: center;
 }
 
 .floor {
-  fill: #e6e6e6;
+  fill: #e6ecec;
 }
 
 .floor:hover, .floor.hovered {
@@ -20,15 +21,43 @@
 }
 
 .outline {
-  fill: #808181;
+  fill: #96a8a8;
   pointer-events: none;
 }
 
-.background {
-  fill: #e6e6e6;
+.reachable {
+  fill: #e6ecec;
+}
+
+.not-reachable {
+  fill: #acc0be;
+}
+
+.stairs {
+  fill: #b3b3b3;
+}
+
+.scribes {
+  pointer-events: none;
 }
 
 .hovered-location {
   height: 50px;
   font-size: 25px;
+}
+
+.room-head {
+  background-color: #ffe599;
+}
+
+.room-study {
+  background-color: #b6d7a8;
+}
+
+.room-department {
+  background-color: #b4a7d6;
+}
+
+.room-other {
+  background-color: #b3b3b3;
 }
