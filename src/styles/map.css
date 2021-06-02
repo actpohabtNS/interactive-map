@@ -41,6 +41,10 @@
   pointer-events: none;
 }
 
+.faded {
+  opacity: .25;
+}
+
 .hovered-location {
   height: 50px;
   font-size: 25px;
