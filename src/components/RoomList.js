@@ -11,7 +11,7 @@ const roomSatisfiesQuery = (room, query) => {
 
   if (staff) {
     for (const staffObj of staff) {
-      if (staffObj.name.toLowerCase.includes(query)) {
+      if (staffObj.name.toLowerCase().includes(query)) {
         return true;
       }
     }

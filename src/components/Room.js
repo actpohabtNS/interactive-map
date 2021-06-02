@@ -26,7 +26,7 @@ const Room = ({ room, className, onFocus, onBlur, onMouseOver, onMouseOut, tabIn
         <div id={`panelsStayOpen-collapse${room.nameShort}`} className="accordion-collapse collapse" aria-labelledby={`panelsStayOpen-heading${room.nameShort}`}>
           <div className="accordion-body">
             <FaUserAlt size={14} className="text-secondary" /> Викладачі:
-            { room.staff.map(person => <div key={person}>{person}</div>) }
+            { room.staff.map(person => <a className="d-block" href={person.link} key={person.name}>{person.name}</a>) }
           </div>
         </div>
         : null
