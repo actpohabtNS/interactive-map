@@ -84,13 +84,13 @@ class BuildingPage extends React.Component {
 
         </Container>
 
-        <Container fluid className="px-5 pt-7vh">
+        <Container fluid className="px-5 pb-5 pt-7vh">
 
           <Row className="my-3">
-            <Col>
-              <div className="d-flex justify-content-center p-5">
+            <Col className="d-flex justify-content-center">
+              <div className="p-5"
+                style={{ maxWidth: "75vw", flex: 1 }}>
                 <SVGMap
-                  className="w-75"
                   map={map}
                   locationClassName={this.getLocationClassName}
                   onLocationClick={this.handleLocationClick}
