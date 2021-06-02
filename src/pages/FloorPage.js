@@ -150,8 +150,8 @@ class FloorPage extends React.Component {
               />
             </Col>
 
-            <Col xl={9} lg={8}>
-              <div className="d-flex justify-content-center p-5 max-h-93vh">
+            <Col xl={9} lg={8} className="d-flex align-items-center">
+              <div className="d-flex justify-content-center p-5 max-h-93vh" style={{ flex: 1 }}>
                 <SVGMap
                   className="w-75"
                   map={map}
