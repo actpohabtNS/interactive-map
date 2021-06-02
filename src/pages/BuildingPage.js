@@ -9,8 +9,6 @@ import fcsc from '../data/fcsc'
 import DataAdapter from '../data/DataAdapter'
 import { getLocationName, getLocationId } from '../utils/event-utils';
 
-const floorsData = require('../data/floors.json')
-
 class BuildingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -73,6 +71,7 @@ class BuildingPage extends React.Component {
 
   render() {
     const { map, childrenBefore, childrenAfter } = this.state.DataAdapter.facultySVGmap();
+    const floors = this.state.DataAdapter.floorsList();
 
     return (
       <>
@@ -112,7 +111,7 @@ class BuildingPage extends React.Component {
             <Col>
               <div className="floors-list">
                 {
-                  floorsData.map(floor => (
+                  floors.map(floor => (
                   <CustomLink
                     id={floor.id}
                     key={ floor.id }
