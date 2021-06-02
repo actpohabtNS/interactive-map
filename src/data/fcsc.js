@@ -1206,68 +1206,215 @@ export default
         {
           "id": "room-501",
           "nameShort": "501",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Декан ФС, Заступник декана з наукової роботи",
+          "category": "head",
+          "staff": [
+            {
+              "name": "Горбачик Андрій Петрович",
+              "link": "https://sociology.knu.ua/uk/person/gorbachik-andriy-petrovich"
+            },{
+              "name": "Куценко Ольга Дмитрівна",
+              "link": "https://sociology.knu.ua/uk/person/kucenko-olga-dmitrivna"
+            }
+          ],
          "path":  "M1413,287C1413,287,1317,287,1317,287C1317,287,1317,196.00001525878906,1317,196.00001525878906C1317,196.00001525878906,1413,196.00001525878906,1413,196.00001525878906C1413,196.00001525878906,1413,287,1413,287"
         },{
           "id": "room-502",
           "nameShort": "502",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Кабінет кафедри Теорії та історії соціології",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Червінська Тетяна Григорівна",
+              "link": "https://sociology.knu.ua/uk/person/chervinska-tetyana-grigorivna"
+            },{
+              "name": "Малес Людмила Володимирівна",
+              "link": "https://sociology.knu.ua/uk/person/males-lyudmyla-volodymyrivna"
+            },{
+              "name": "Соболевська Марина Олександрівна",
+              "link": "https://sociology.knu.ua/uk/person/sobolevska-maryna-oleksandrivna"
+            },{
+              "name": "Дейнека Артемій Вадимович",
+              "link": "https://sociology.knu.ua/uk/person/deyneka-artemiy-vadymovych"
+            },{
+              "name": "Мороз Євгенія Олегівна",
+              "link": "https://sociology.knu.ua/uk/person/moroz-ievgeniya-olegivna"
+            },{
+              "name": "Полієнко Олена Вікторівна",
+              "link": "https://sociology.knu.ua/uk/person/polienko-olena-viktorivna"
+            },{
+              "name": "Ковтуненко Елліанна Станіславівна",
+              "link": "https://sociology.knu.ua/uk/person/kovtunenko-ellianna-stanislavivna"
+            },{
+              "name": "Корж Костянтин Мирославович",
+              "link": "https://sociology.knu.ua/uk/person/korzh-kostyantin-miroslavovich"
+            }
+          ],
          "path":  "M1082,216.99998474121094C1082,216.99998474121094,1082,387,1082,387C1082,387,936,387,936,387C936,387,936,216.99998474121094,936,216.99998474121094C936,216.99998474121094,1082,216.99998474121094,1082,216.99998474121094"
         },{
           "id": "room-503",
           "nameShort": "503",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Кабінет кафедри Методології та методів соціологічних досліджень",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Олійник Оксана Валеріївна",
+              "link": "https://sociology.knu.ua/uk/person/oliynik-oksana-valeriyivna"
+            },{
+              "name": "Сальнікова Світлана Анатоліївна",
+              "link": "https://sociology.knu.ua/uk/person/salnikova-svitlana-anatoliyivna"
+            },{
+              "name": "Юзва Людмила Леонідівна",
+              "link": "https://sociology.knu.ua/uk/person/yuzva-lyudmila-leonidivna"
+            },{
+              "name": "Ковальська Єлєна Валеріївна",
+              "link": "https://sociology.knu.ua/uk/person/kovalska-yelyena-valeriyivna"
+            },{
+              "name": "Середа Олексій Сергійович",
+              "link": "https://sociology.knu.ua/uk/person/sereda-oleksiy-sergiyovich"
+            },{
+              "name": "Шамаріна Людмила Анатоліївна",
+              "link": "https://sociology.knu.ua/uk/person/shamarina-lyudmyla-anatoliyivna"
+            },{
+              "name": "Нікітіна Тетяна Євгенівна",
+              "link": "https://sociology.knu.ua/uk/person/nikitina-tetyana-ievgenivna"
+            }
+          ],
          "path":  "M936,216.99998474121094C936,216.99998474121094,936,387,936,387C936,387,790,387,790,387C790,387,790,216.99998474121094,790,216.99998474121094C790,216.99998474121094,936,216.99998474121094,936,216.99998474121094"
         },{
           "id": "room-504",
           "nameShort": "504",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Бібліотека Факультету соціології",
+          "category": "department",
          "path":  "M791,217C791,217,791,387,791,387C791,387,574,387,574,387C574,387,574,217,574,217C574,217,791,217,791,217"
         },{
           "id": "room-505",
           "nameShort": "505",   
-          "name": "Навчальна аудиторія",
+          "name": "Комп’ютерний клас",
           "category": "study",
          "path":  "M574,217C574,217,574,387,574,387C574,387,357,387,357,387C357,387,357,217,357,217C357,217,574,217,574,217"
         },{
           "id": "room-506",
           "nameShort": "506",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Науково-дослідна група ФС",
+          "category": "department",
          "path":  "M25.999998092651367,196C25.999998092651367,196,123,196,123,196C123,196,123,287,123,287C123,287,25.999998092651367,287,25.999998092651367,287C25.999998092651367,287,25.999998092651367,196,25.999998092651367,196"
         },{
           "id": "room-507",
           "nameShort": "507",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Відділ аспірантури та докторантури ФС",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Совенко Ольга Сергіївна",
+              "link": "https://sociology.knu.ua/uk/person/sovenko-olga-sergiyivna"
+            }
+          ],
          "path":  "M502,2.999992847442627C502,2.999992847442627,502,173,502,173C502,173,357,173,357,173C357,173,357,2.999992847442627,357,2.999992847442627C357,2.999992847442627,502,2.999992847442627,502,2.999992847442627"
         },{
           "id": "room-508",
           "nameShort": "508",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Кабінет кафедри Галузевої соціології",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Безрукова Ольга Анатоліївна",
+              "link": "https://sociology.knu.ua/uk/person/bezrukova-olga-anatoliyivna"
+            },{
+              "name": "Туленков Микола Васильович",
+              "link": "https://sociology.knu.ua/uk/person/tulenkov-mikola-vasilovich"
+            },{
+              "name": "Боровський Олексій Олександрович",
+              "link": "https://sociology.knu.ua/uk/person/borovskiy-oleksiy-oleksandrovich"
+            },{
+              "name": "Вілкова Олена Юріївна",
+              "link": "https://sociology.knu.ua/uk/person/vilkova-olena-yuriyivna"
+            },{
+              "name": "Петренко-Лисак Алла Олександрівна",
+              "link": "https://sociology.knu.ua/uk/person/petrenko-lysak-alla-oleksandrivna"
+            },{
+              "name": "Тарабукін Юрій Орестович",
+              "link": "https://sociology.knu.ua/uk/person/tarabukin-yuriy-orestovich"
+            },{
+              "name": "Чудовська Ірина Анатоліївна",
+              "link": "https://sociology.knu.ua/uk/person/chudovska-irina-anatoliyivna"
+            },{
+              "name": "Черних Геннадій Андрійович",
+              "link": "https://sociology.knu.ua/uk/person/chernyh-gennadiy-andriyovych"
+            },{
+              "name": "Зірка Алла Георгіївна",
+              "link": "https://sociology.knu.ua/uk/person/zirka-alla-georgiyivna"
+            }
+          ],
          "path":  "M647,2.999990701675415C647,2.999990701675415,647,172.99998474121094,647,172.99998474121094C647,172.99998474121094,502,172.99998474121094,502,172.99998474121094C502,172.99998474121094,502,2.999990701675415,502,2.999990701675415C502,2.999990701675415,647,2.999990701675415,647,2.999990701675415"
         },{
           "id": "room-509",
           "nameShort": "509",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Кабінет кафедри Соціальних структур та соціальних відносин",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Склярова Ірина Анатоліївна",
+              "link": "https://sociology.knu.ua/uk/person/sklyarova-iryna-anatoliyivna"
+            },{
+              "name": "Мазурик Олег Володимирович",
+              "link": "https://sociology.knu.ua/uk/person/mazurik-oleg-volodimirovich"
+            },{
+              "name": "Аза Лариса Олександрівна",
+              "link": "https://sociology.knu.ua/uk/person/aza-larisa-oleksandrivna"
+            },{
+              "name": "Цимбалюк Наталія Миколаївна",
+              "link": "https://sociology.knu.ua/uk/person/cymbalyuk-nataliya-mykolayivna"
+            },{
+              "name": "Бабенко Світлана Сергіївна",
+              "link": "https://sociology.knu.ua/uk/person/babenko-svitlana-sergiyivna"
+            },{
+              "name": "Фостер (Камінська) Лариса Федорівна",
+              "link": "https://sociology.knu.ua/uk/person/kaminska-larisa-fedorivna"
+            },{
+              "name": "Тащенко Анна Юріївна",
+              "link": "https://sociology.knu.ua/uk/person/nedzelskiy-anton-oleksandrovich"
+            },{
+              "name": "Шелухін Володимир Анатолійович",
+              "link": "https://sociology.knu.ua/uk/person/sheluhin-volodymyr-anatoliyovych"
+            },{
+              "name": "Богинська Тетяна Вiкторiвна",
+              "link": "https://sociology.knu.ua/uk/person/bogynska-tetyana-viktorivna"
+            },{
+              "name": "Іващенко Ольга Василівна",
+              "link": "https://sociology.knu.ua/uk/person/ivashchenko-olga-vasylivna"
+            }
+          ],
          "path":  "M791,2.999988555908203C791,2.999988555908203,791,172.99998474121094,791,172.99998474121094C791,172.99998474121094,647,172.99998474121094,647,172.99998474121094C647,172.99998474121094,647,2.999988555908203,647,2.999988555908203C647,2.999988555908203,791,2.999988555908203,791,2.999988555908203"
         },{
           "id": "room-510",
           "nameShort": "510",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Завідувачі кафедр Галузевої соціології і Соціальних структур та соціальних відносин",
+          "category": "head",
+          "staff": [
+            {
+              "name": "Чепак Валентина Василівна",
+              "link": "https://sociology.knu.ua/uk/person/chepak-valentina-vasilivna"
+            },{
+              "name": "Куценко Ольга Дмитрівна",
+              "link": "https://sociology.knu.ua/uk/person/kucenko-olga-dmitrivna"
+            }
+          ],
          "path":  "M936,2.999986410140991C936,2.999986410140991,936,172.99998474121094,936,172.99998474121094C936,172.99998474121094,791,172.99998474121094,791,172.99998474121094C791,172.99998474121094,791,2.999986410140991,791,2.999986410140991C791,2.999986410140991,936,2.999986410140991,936,2.999986410140991"
         },{
           "id": "room-511",
           "nameShort": "511",   
-          "name": "Навчальна аудиторія",
-          "category": "study",
+          "name": "Завідувачі кафедр Теорії та історії соціології; Методології та методів соціологічних досліджень",
+          "category": "department",
+          "staff": [
+            {
+              "name": "Судаков Володимир Іванович",
+              "link": "https://sociology.knu.ua/uk/person/sudakov-volodimir-ivanovich"
+            },{
+              "name": "Сидоров Микола Володимир-Станіславович",
+              "link": "https://sociology.knu.ua/uk/person/sidorov-mikola-volodimir-stanislavovich"
+            }
+          ],
          "path":  "M1082,2.9999842643737793C1082,2.9999842643737793,1082,172.99998474121094,1082,172.99998474121094C1082,172.99998474121094,936,172.99998474121094,936,172.99998474121094C936,172.99998474121094,936,2.9999842643737793,936,2.9999842643737793C936,2.9999842643737793,1082,2.9999842643737793,1082,2.9999842643737793"
         },{
           "id": "elevators",
