@@ -94,6 +94,7 @@ class BuildingPage extends React.Component {
                   map={map}
                   locationClassName={this.getLocationClassName}
                   onLocationClick={this.handleLocationClick}
+                  onLocationFocus={this.handleLocationClick}
                   onLocationMouseOver={this.handleLocationMouseOver}
                   onLocationMouseOut={this.handleLocationMouseOut}
                   onLocationMouseMove={this.handleLocationMouseMove}
