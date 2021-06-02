@@ -9,8 +9,6 @@ import fcsc from '../data/fcsc'
 import DataAdapter from '../data/DataAdapter'
 import { getLocationName, getLocationId } from '../utils/event-utils';
 
-const floorsData = require('../data/floors.json')
-
 class FloorPage extends React.Component {
   constructor(props) {
     super(props);
@@ -112,7 +110,8 @@ class FloorPage extends React.Component {
   
   render() {
     const { floorId } = this.props.match.params;
-    const floor = floorsData.find(floor => floor.id === floorId);
+    const floors = this.state.DataAdapter.floorsList();
+    const floor = floors.find(floor => floor.id === floorId);
 
     if (!floor) {
       return <Redirect to='/404-page-not-found' />
