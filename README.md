@@ -77,7 +77,6 @@ The app to look through the map of your department and get information about eac
 # Used design patterns
 
 ## Adapter
----
 
 ### Description:
 It is a structural design pattern that allows objects with incompatible interfaces to collaborate.
@@ -104,7 +103,6 @@ Floor level: floor(floor_id), floorMap(floor_id), floorSVGmap(floor_id), roomsLi
 # React Design Patterns and Principles
 
 ## Conditional Rendering
----
 
 ### Description:
 If/else statements can't be used inside a component declaration, so short-circuit evaluation and ternary operator should be used instead.
@@ -116,7 +114,6 @@ If/else statements can't be used inside a component declaration, so short-circui
 
 
 ## State hoisting
----
 
 ### Description
 Whenever a container needs to hold and change the state of its child, a callback is passed to that child. The state is hoisted to the container, by the provided callback, where it's used to update local state.
@@ -128,7 +125,6 @@ Whenever a container needs to hold and change the state of its child, a callback
 
 
 ## Higher-Order Components (HOC)
----
 
 ### Description
 Higher-Order Components are basically a function that receive a component as an argument and return a new component with specific business logic inside.
