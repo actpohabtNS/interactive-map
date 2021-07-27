@@ -26,6 +26,7 @@ The app to look through the map of your department and get information about eac
 * Filter empty (in schedule term) rooms
 * Faculty room search
 * Constant room links (which can be shared and will point to the same room)
+* Links to Faculty site on University map
 
 
 # Glossary
